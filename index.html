@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== 메타 정보 ===== -->
+  <title>윤지원 | 게임 클라이언트 개발자</title>
+  <meta name="description" content="C++/DirectX11 자체 엔진 개발 경험을 가진 게임 클라이언트 개발자 윤지원의 포트폴리오입니다." />
+  <meta property="og:title" content="윤지원 | 게임 클라이언트 개발자" />
+  <meta property="og:description" content="C++/DirectX11 자체 엔진 개발 경험을 가진 게임 클라이언트 개발자 윤지원의 포트폴리오입니다." />
+  <meta property="og:image" content="./assets/images/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#hero">
+        <span class="logo__name">윤지원</span>
+        <span class="logo__role">GAME CLIENT DEVELOPER</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            원리를 이해하고 분석하여<br />
+            <span class="text-primary">탄탄한 로직</span>을 구현하는 개발자
+          </h1>
+          <p class="hero__desc">
+            C++/DirectX11를 이용한 자체 엔진 개발 경험을 통해 엔진의 구조와 프레임워크를
+            신속히 파악하고, 최적화된 게임플레이 및 시스템을 구현합니다.
+          </p>
+          <!-- HERO:BUTTONS:START — 편집기의 '메인 화면' 탭에서 관리합니다. 직접 고치면 저장할 때 덮어써집니다. -->
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://github.com/username" target="_blank" rel="noopener">
+              GitHub <span class="btn__arrow">→</span>
+            </a>
+            <a class="btn btn--secondary" href="https://notion.so/username" target="_blank" rel="noopener">
+              Notion <span class="btn__arrow">→</span>
+            </a>
+          </div>
+          <!-- HERO:BUTTONS:END -->
+        </div>
+
+        <!-- 자동 전환 이미지 슬라이드 -->
+        <div class="hero__visual">
+          <!-- HERO:SLIDER:START — 편집기의 '메인 화면' 탭에서 관리합니다. 직접 고치면 저장할 때 덮어써집니다. -->
+          <div class="slider-box slider-box--hero" data-slider data-interval="4000">
+            <div class="slider" aria-roledescription="carousel" aria-label="대표 이미지">
+              <div class="slider__track">
+                <div class="slider__slide"><img src="./assets/images/hero/hero-01.png" alt="대표 이미지 1" /></div>
+                <div class="slider__slide"><img src="./assets/images/hero/hero-02.png" alt="대표 이미지 2" /></div>
+                <div class="slider__slide"><img src="./assets/images/hero/hero-03.png" alt="대표 이미지 3" /></div>
+              </div>
+            </div>
+            <div class="slider__dots"></div>
+          </div>
+          <!-- HERO:SLIDER:END -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+
+        <div class="about">
+          <div class="about__photo">
+            <!-- 이미지: assets/images/profile.jpg (권장 600x600, 정사각형) -->
+            <img src="./assets/images/profile.jpg" alt="프로필 사진" />
+          </div>
+
+          <div class="about__body">
+            <p class="about__text">
+              게임 개발을 시작한 지 5년 차, 세상을 즐겁게 할 게임을 만들고 싶어 달려왔습니다.
+            </p>
+
+            <ul class="about__meta">
+              <li><span class="about__meta-label">이름</span> 윤지원</li>
+              <li><span class="about__meta-label">학력</span> 인하대학교 컴퓨터공학과 <em>(2026.02 졸업)</em></li>
+              <li><span class="about__meta-label">주력</span> C++ / DirectX11 / Unreal 5</li>
+              <li><span class="about__meta-label">이메일</span> wldnjs1311@naver.com</li>
+            </ul>
+
+            <h3 class="about__sub">이력</h3>
+            <ul class="history">
+              <li class="history__item">
+                <span class="history__date">2025.12</span>
+                <span class="history__desc">인하대학교 창의적 종합설계 <strong>장려상 수상</strong></span>
+              </li>
+              <li class="history__item">
+                <span class="history__date">2023.12</span>
+                <span class="history__desc">미디어 인공지능 연구실 <strong>학부 연구생</strong></span>
+              </li>
+              <li class="history__item">
+                <span class="history__date">2022.01</span>
+                <span class="history__desc">게임 개발 동아리 InGame(전 IGDC) <strong>회장</strong></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ===== 핵심 강점 (마우스를 올리면 상세 설명) ===== -->
+        <div class="block-head">
+          <h3 class="block-head__title">핵심 강점</h3>
+          <p class="block-head__hint block-head__hint--hover">카드에 마우스를 올리면 자세한 내용이 표시됩니다.</p>
+        </div>
+
+        <ul class="strengths">
+          <li class="strength" tabindex="0">
+            <div class="strength__front">
+              <span class="strength__num">01</span>
+              <span class="strength__key">자체 엔진</span>
+              <span class="strength__lead">C++ / DirectX11</span>
+            </div>
+            <div class="strength__back">
+              <p>깊이 있는 CS와 그래픽스 이해를 바탕으로 C++/DirectX11 기반 엔진을 직접 개발했습니다.</p>
+            </div>
+          </li>
+
+          <li class="strength" tabindex="0">
+            <div class="strength__front">
+              <span class="strength__num">02</span>
+              <span class="strength__key">애니메이션</span>
+              <span class="strength__lead">파이프라인 / 툴</span>
+            </div>
+            <div class="strength__back">
+              <p>애니메이션 제어 / 디버깅 툴을 구현하고, 본 행렬 병렬화와 Compute Shader로 성능을 최적화했습니다.</p>
+            </div>
+          </li>
+
+          <li class="strength" tabindex="0">
+            <div class="strength__front">
+              <span class="strength__num">03</span>
+              <span class="strength__key">네트워크</span>
+              <span class="strength__lead">소켓 / AWS</span>
+            </div>
+            <div class="strength__back">
+              <p>C++ 소켓 프로그래밍으로 클라이언트 동기화를 구현하고 AWS 환경에서 구동을 검증했습니다.</p>
+            </div>
+          </li>
+
+          <li class="strength" tabindex="0">
+            <div class="strength__front">
+              <span class="strength__num">04</span>
+              <span class="strength__key">최적화</span>
+              <span class="strength__lead">프로파일링 / 멀티스레딩</span>
+            </div>
+            <div class="strength__back">
+              <p>프로파일링으로 병목 지점을 찾고, 멀티스레딩과 자료구조 개선으로 성능을 끌어올렸습니다.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__subtitle">사용하는 기술과 직접 구현해 온 시스템입니다.</p>
+
+        <div class="skills">
+
+          <!-- 스킬 그룹 1 -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">Engine &amp; Graphics</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <!-- 아이콘: assets/images/icons/directx.svg (권장 48x48) -->
+                <img class="skill__icon" src="./assets/images/icons/directx.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">DirectX 11</span>
+                  <span class="skill__desc">자체 엔진 설계 및 게임 콘텐츠 구현</span>
+                </div>
+              </li>
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/unreal.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">Unreal 5</span>
+                  <span class="skill__desc">C++ / 블루프린트 기반 3D 게임 제작</span>
+                </div>
+              </li>
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/unity.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">Unity</span>
+                  <span class="skill__desc">2D / 3D 프로젝트 제작</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 스킬 그룹 2 -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">Language</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/cpp.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">C++</span>
+                  <span class="skill__desc">자체 엔진 / Unreal 개발, 멀티스레딩 / 소켓 프로그래밍</span>
+                </div>
+              </li>
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/csharp.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">C#</span>
+                  <span class="skill__desc">Unity 프로젝트 개발</span>
+                </div>
+              </li>
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/python.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">Python</span>
+                  <span class="skill__desc">반복 작업 자동화 툴 제작</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 스킬 그룹 3 -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">Tools</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/git.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">Git / GitHub</span>
+                  <span class="skill__desc">브랜치 전략 기반 협업 및 형상 관리</span>
+                </div>
+              </li>
+              <li class="skill">
+                <img class="skill__icon" src="./assets/images/icons/visualstudio.svg" alt="" />
+                <div class="skill__body">
+                  <span class="skill__name">Visual Studio</span>
+                  <span class="skill__desc">디버깅 / 프로파일링으로 병목 분석</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- ===== 구현 경험 ===== -->
+        <div class="block-head">
+          <h3 class="block-head__title">구현 경험</h3>
+          <p class="block-head__hint">직접 설계하고 구현한 시스템입니다.</p>
+        </div>
+
+        <ul class="systems">
+          <li class="system">
+            <span class="system__name">애니메이션 시스템</span>
+            <span class="system__desc">파이프라인 구축, 제어 / 디버깅 툴</span>
+          </li>
+          <li class="system">
+            <span class="system__name">전투 시스템</span>
+            <span class="system__desc">판정, 상태 전이, 스킬 흐름</span>
+          </li>
+          <li class="system">
+            <span class="system__name">플레이어 / 카메라</span>
+            <span class="system__desc">조작감, 카메라 제어</span>
+          </li>
+          <li class="system">
+            <span class="system__name">NPC AI</span>
+            <span class="system__desc">FSM / 행동 트리 기반 패턴</span>
+          </li>
+          <li class="system">
+            <span class="system__name">길찾기</span>
+            <span class="system__desc">Navmesh / Funnel 알고리즘 직접 구현</span>
+          </li>
+          <li class="system">
+            <span class="system__name">데디케이티드 서버</span>
+            <span class="system__desc">클라이언트 동기화, AWS 구동</span>
+          </li>
+          <li class="system">
+            <span class="system__name">인게임 UI</span>
+            <span class="system__desc">HUD, 인벤토리</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">직접 만든 게임과 그 안에서 맡은 역할입니다.</p>
+
+        <!-- PROJECTS:START — 이 아래는 tools/pjedit.py 가 자동 생성합니다. 직접 수정하지 마세요 -->
+        <div class="block-head block-head--first">
+          <h3 class="block-head__title">대표 프로젝트</h3>
+        </div>
+
+        <div class="projects">
+
+          <!-- ===== DX11 자체 엔진 개발 ===== -->
+          <article class="project">
+            <div class="project__media">
+              <div class="slider-box" data-slider data-interval="5000">
+                <div class="slider" aria-roledescription="carousel" aria-label="DX11 자체 엔진 개발 이미지">
+                  <div class="slider__track">
+                    <div class="slider__slide"><img src="./assets/images/projects/02-01.png" alt="DX11 자체 엔진 개발 이미지 1" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">DX11 자체 엔진 개발</h3>
+                <span class="project__period">2024.09 – 2024.12</span>
+              </div>
+              <p class="project__role">팀 프로젝트(6인) · 애니메이션/전투/상태제어</p>
+              <p class="project__desc">
+                자체 엔진을 개발했습니다.
+              </p>
+
+              <ul class="project__points">
+                <li>구현한 핵심 기능 1 — 어떤 문제를 어떤 방식으로 해결했는지</li>
+                <li>구현한 핵심 기능 2 — 사용한 기술/패턴과 그 이유</li>
+                <li>구현한 핵심 기능 3 — 성능 / 구조 측면에서 개선한 결과</li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tag">DirectX11</li>
+                <li class="tag">C++</li>
+              </ul>
+
+              <div class="project__links">
+                <a class="link-arrow" href="#" target="_blank" rel="noopener">GitHub <span>→</span></a>
+                <a class="link-arrow" href="#" target="_blank" rel="noopener">플레이 영상 <span>→</span></a>
+              </div>
+
+              <button class="btn btn--primary project__toggle" type="button" aria-expanded="false" aria-controls="detail-02">
+                <span class="project__toggle-text">상세 내용 보기</span>
+                <span class="project__toggle-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- 토글로 펼쳐지는 상세 내용 -->
+            <div class="project__detail" id="detail-02" hidden>
+              <div class="project__detail-inner">
+
+                <h4 class="detail__title">트러블 슈팅</h4>
+                <div class="troubles">
+
+                  <div class="trouble">
+                    <h5 class="trouble__title">문제 상황을 한 줄로 요약</h5>
+                    <dl class="pcs">
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--problem">Problem</dt>
+                        <dd class="pcs__text">어떤 현상이 발생했는지. 수치가 있으면 함께 적습니다.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--cause">Cause</dt>
+                        <dd class="pcs__text">원인을 어떻게 찾았고 무엇이 원인이었는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--solution">Solution</dt>
+                        <dd class="pcs__text"><strong>어떤 방식으로 해결했고</strong> 결과가 얼마나 개선되었는지.</dd>
+                      </div>
+                    </dl>
+                  </div>
+
+                  <div class="trouble">
+                    <h5 class="trouble__title">두 번째 문제 상황</h5>
+                    <dl class="pcs">
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--problem">Problem</dt>
+                        <dd class="pcs__text">어떤 현상이 발생했는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--cause">Cause</dt>
+                        <dd class="pcs__text">원인은 무엇이었는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--solution">Solution</dt>
+                        <dd class="pcs__text"><strong>어떻게 해결했는지</strong>와 그 결과.</dd>
+                      </div>
+                    </dl>
+                  </div>
+
+                </div>
+
+                <h4 class="detail__title">배운 점</h4>
+                <ul class="insights">
+                  <li><strong>키워드</strong> — 이 프로젝트를 통해 기술적으로 이해하게 된 내용.</li>
+                  <li><strong>키워드</strong> — 다시 만든다면 다르게 접근할 부분.</li>
+                </ul>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== [모작] 마비노기 모바일 ===== -->
+          <article class="project">
+            <div class="project__media">
+              <div class="slider-box" data-slider data-interval="5000">
+                <div class="slider" aria-roledescription="carousel" aria-label="[모작] 마비노기 모바일 이미지">
+                  <div class="slider__track">
+                    <div class="slider__slide"><img src="./assets/images/projects/03-01.png" alt="[모작] 마비노기 모바일 이미지 1" /></div>
+                    <div class="slider__slide"><img src="./assets/images/projects/03-02.png" alt="[모작] 마비노기 모바일 이미지 2" /></div>
+                    <div class="slider__slide"><img src="./assets/images/projects/03-03.png" alt="[모작] 마비노기 모바일 이미지 3" /></div>
+                  </div>
+                  <button class="slider__arrow slider__arrow--prev" type="button" aria-label="이전 이미지"></button>
+                  <button class="slider__arrow slider__arrow--next" type="button" aria-label="다음 이미지"></button>
+                </div>
+                <div class="slider__dots"></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__head">
+                <h3 class="project__title">[모작] 마비노기 모바일</h3>
+                <span class="project__period">2024.06 – 2024.08</span>
+              </div>
+              <p class="project__role">팀 프로젝트(6인) · 플레이어 / 몬스터AI / 전투 / 애니메이션 제어</p>
+              <p class="project__desc">
+                직접 확장한 자체 엔진 위에 캐릭터와 전투 콘텐츠를 구현한 팀 프로젝트입니다. 보스몬스터를 포함한 몬스터 11종, 플레이어, 카메라 연출을 담당했습니다.
+              </p>
+
+              <ul class="project__points">
+                <li>구현한 핵심 기능 1 — 어떤 문제를 어떤 방식으로 해결했는지</li>
+                <li>구현한 핵심 기능 2 — 사용한 기술/패턴과 그 이유</li>
+                <li>구현한 핵심 기능 3 — 성능 / 구조 측면에서 개선한 결과</li>
+              </ul>
+
+              <ul class="tags">
+                <li class="tag">DirectX11</li>
+                <li class="tag">C++</li>
+                <li class="tag">RPG</li>
+              </ul>
+
+              <p class="project__notice">
+                본 프로젝트는 <strong>「마비노기 모바일」의 시스템과 기술을 학습 목적으로 재구현한 모작</strong>으로,
+                <strong>모든 프로그래밍은 직접 작성</strong>했습니다. 원작의 원본 리소스 권리는 원저작권자에게 있으며,
+                학습 목적 비상업적 용도로만 사용하고 외부에 배포하지 않습니다.
+              </p>
+
+              <div class="project__links">
+                <a class="link-arrow" href="https://youtu.be/v2zp-BCCSC8" target="_blank" rel="noopener">플레이 영상 <span>→</span></a>
+              </div>
+
+              <button class="btn btn--primary project__toggle" type="button" aria-expanded="false" aria-controls="detail-03">
+                <span class="project__toggle-text">상세 내용 보기</span>
+                <span class="project__toggle-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- 토글로 펼쳐지는 상세 내용 -->
+            <div class="project__detail" id="detail-03" hidden>
+              <div class="project__detail-inner">
+
+                <h4 class="detail__title">트러블 슈팅</h4>
+                <div class="troubles">
+
+                  <div class="trouble">
+                    <h5 class="trouble__title">문제 상황을 한 줄로 요약</h5>
+                    <dl class="pcs">
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--problem">Problem</dt>
+                        <dd class="pcs__text">어떤 현상이 발생했는지. 수치가 있으면 함께 적습니다.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--cause">Cause</dt>
+                        <dd class="pcs__text">원인을 어떻게 찾았고 무엇이 원인이었는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--solution">Solution</dt>
+                        <dd class="pcs__text"><strong>어떤 방식으로 해결했고</strong> 결과가 얼마나 개선되었는지.</dd>
+                      </div>
+                    </dl>
+                  </div>
+
+                  <div class="trouble">
+                    <h5 class="trouble__title">두 번째 문제 상황</h5>
+                    <dl class="pcs">
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--problem">Problem</dt>
+                        <dd class="pcs__text">어떤 현상이 발생했는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--cause">Cause</dt>
+                        <dd class="pcs__text">원인은 무엇이었는지.</dd>
+                      </div>
+                      <div class="pcs__row">
+                        <dt class="pcs__label pcs__label--solution">Solution</dt>
+                        <dd class="pcs__text"><strong>어떻게 해결했는지</strong>와 그 결과.</dd>
+                      </div>
+                    </dl>
+                  </div>
+
+                </div>
+
+                <h4 class="detail__title">배운 점</h4>
+                <ul class="insights">
+                  <li><strong>키워드</strong> — 이 프로젝트를 통해 기술적으로 이해하게 된 내용.</li>
+                  <li><strong>키워드</strong> — 다시 만든다면 다르게 접근할 부분.</li>
+                </ul>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ===== 기타 프로젝트 ===== -->
+        <div class="block-head">
+          <h3 class="block-head__title">기타 프로젝트</h3>
+        </div>
+
+        <ul class="minis">
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/project-01-01.png" alt="Zoombie Shooter 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">Zoombie Shooter</h4>
+                <p class="mini__meta">2025.03 – 2025.06 · TPS 슈팅 게임</p>
+                <p class="mini__desc">한 줄로 설명하는 게임 소개. 장르와 핵심 재미 요소를 적습니다.</p>
+                <ul class="tags">
+                  <li class="tag">Unreal5</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">GitHub <span>→</span></a>
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">플레이 영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">Zoombie Shooter</h4>
+                <p class="mini__meta">2025.03 – 2025.06 · TPS 슈팅 게임</p>
+                <p class="mini__desc mini__desc--full">한 줄로 설명하는 게임 소개. 장르와 핵심 재미 요소를 적습니다.</p>
+                <ul class="mini__points">
+                  <li>구현한 핵심 기능 1 — 어떤 문제를 어떤 방식으로 해결했는지</li>
+                  <li>구현한 핵심 기능 2 — 사용한 기술/패턴과 그 이유</li>
+                  <li>구현한 핵심 기능 3 — 성능 / 구조 측면에서 개선한 결과</li>
+                </ul>
+                <ul class="tags">
+                  <li class="tag">Unreal5</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">GitHub <span>→</span></a>
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">플레이 영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__body">
+                <h4 class="mini__title">Cafe Simulator</h4>
+                <p class="mini__meta">2026.08 - (진행중) · 개인</p>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">Cafe Simulator</h4>
+                <p class="mini__meta">2026.08 - (진행중) · 개인</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/mini-03.png" alt="은퇴하고 치킨집 차렸습니다. 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">은퇴하고 치킨집 차렸습니다.</h4>
+                <p class="mini__meta">2024.11 · 게임잼 (48h)</p>
+                <p class="mini__desc">장르와 만든 것을 한 줄로.</p>
+                <ul class="tags">
+                  <li class="tag">Unreal5</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">GitHub <span>→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">은퇴하고 치킨집 차렸습니다.</h4>
+                <p class="mini__meta">2024.11 · 게임잼 (48h)</p>
+                <p class="mini__desc mini__desc--full">장르와 만든 것을 한 줄로.</p>
+                <ul class="mini__points">
+                  <li>구현한 핵심 기능 1 — 어떤 문제를 어떤 방식으로 해결했는지</li>
+                  <li>구현한 핵심 기능 2 — 사용한 기술/패턴과 그 이유</li>
+                </ul>
+                <ul class="tags">
+                  <li class="tag">Unreal5</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">GitHub <span>→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/08-01.png" alt="[모작] Valorant 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">[모작] Valorant</h4>
+                <p class="mini__meta">2025.03 - 2025.05 · 팀 (4인)</p>
+                <p class="mini__desc">장르와 만든 것을 한 줄로.</p>
+                <ul class="tags">
+                  <li class="tag">DirectX11</li>
+                  <li class="tag">C++</li>
+                  <li class="tag">멀티플레이</li>
+                  <li class="tag">FPS</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">[모작] Valorant</h4>
+                <p class="mini__meta">2025.03 - 2025.05 · 팀 (4인)</p>
+                <p class="mini__desc mini__desc--full">장르와 만든 것을 한 줄로.</p>
+                <ul class="mini__points">
+                  <li>UDP 기반 데디케이티드 서버 구현. AWS에 연동하여 실제 네트워크 환경에서 동작하는 것을 확인.</li>
+                  <li>A*와 Funnel알고리즘을 사용한 Navmesh 길찾기 구현</li>
+                  <li>상하체 분리 애니메이션 제어</li>
+                  <li>디퍼드 렌더링 파이프라인 + FPS 전용 렌더 패스</li>
+                  <li>UDP 신뢰성 제공을 위한 자체 규칙 구현 : 시퀀스 번호를 이용한 동기화,ACK / 재전송</li>
+                  <li>서버 로직 구현 : 라운드 상태머신 + 매치 진행 로직 구현</li>
+                  <li>서버가 30FPS로 브로드캐스트하는 상태 스냅샷을 클라이언트 프레임레이트에 맞춰 보간하여 원격 플레이어의 움직임을 표현. 시퀀스 번호로 순서가 뒤바뀐 패킷을 폐기하고,NetworkConnector 컴포넌트를 부착하는 것만으로 임의 오브젝트를 동기화 대상으로 만들 수 있도록 설계.</li>
+                </ul>
+                <p class="mini__notice">「Valorant」를 학습 목적으로 재구현한 모작이며, 프로그래밍은 직접 작성했습니다. 원본 리소스는 외부에 배포하지 않습니다.</p>
+                <ul class="tags">
+                  <li class="tag">DirectX11</li>
+                  <li class="tag">C++</li>
+                  <li class="tag">멀티플레이</li>
+                  <li class="tag">FPS</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/05-03.png" alt="[모작] Cult of the Lamb 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">[모작] Cult of the Lamb</h4>
+                <p class="mini__meta">2024.12 - 2025.02 · 팀 (3인)</p>
+                <p class="mini__desc">DirectX 9 자체 엔진으로 제작한 2.5D RPG 모작입니다. NPC AI와 마을 콘텐츠를 담당했습니다.</p>
+                <ul class="tags">
+                  <li class="tag">DirectX11</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="https://youtu.be/k3mgfcpyHU8" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">[모작] Cult of the Lamb</h4>
+                <p class="mini__meta">2024.12 - 2025.02 · 팀 (3인)</p>
+                <p class="mini__desc mini__desc--full">DirectX 9 자체 엔진으로 제작한 2.5D RPG 모작입니다. NPC AI와 마을 콘텐츠를 담당했습니다.</p>
+                <ul class="mini__points">
+                  <li><strong>마을 콘텐츠</strong> : 건설, 농사, 요리, 청소, 채집 등 플레이어와 NPC가 상호작용하는 마을 콘텐츠 구현</li>
+                  <li><strong>NPC AI</strong> : FSM으로 환경 조건과 플레이어의 명령에 따라 작업을 수행하는 AI 구현</li>
+                  <li><strong>UI</strong> : 건축 해금 트리, 인벤토리, 건축 설치 안내 그리드 등 UI 구현</li>
+                </ul>
+                <p class="mini__notice">「Cult of the Lamb」를 학습 목적으로 재구현한 모작이며, 프로그래밍은 직접 작성했습니다. 원본 리소스는 외부에 배포하지 않습니다.</p>
+                <ul class="tags">
+                  <li class="tag">DirectX11</li>
+                  <li class="tag">C++</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="https://youtu.be/k3mgfcpyHU8" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/pj-6afcc2-02.png" alt="Space Craft 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">Space Craft</h4>
+                <p class="mini__meta">2025.09 - 2025.12 · 팀 (3인)</p>
+                <p class="mini__desc">평면도 분석부터 공간 생성, 가구 배치까지 자동화한 <strong>인테리어 시뮬레이션 프로그램</strong>입니다. 사용자가 평면도를 넣으면 시멘틱 세그멘테이션으로 이미지를 분석하고 후처리로 메쉬 정보를 만들어 Unity에서 3D로 렌더링합니다. 해당 공간에 가구를 수동 또는 자동으로 배치하고 시뮬레이션할 수 있습니다.</p>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">Python</li>
+                  <li class="tag">DeepLabV3+</li>
+                  <li class="tag">OpenCV</li>
+                  <li class="tag">시뮬레이션</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="https://youtu.be/b0ON-AcpSPE" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">Space Craft</h4>
+                <p class="mini__meta">2025.09 - 2025.12 · 팀 (3인)</p>
+                <p class="mini__desc mini__desc--full">평면도 분석부터 공간 생성, 가구 배치까지 자동화한 <strong>인테리어 시뮬레이션 프로그램</strong>입니다. 사용자가 평면도를 넣으면 시멘틱 세그멘테이션으로 이미지를 분석하고 후처리로 메쉬 정보를 만들어 Unity에서 3D로 렌더링합니다. 해당 공간에 가구를 수동 또는 자동으로 배치하고 시뮬레이션할 수 있습니다.</p>
+                <ul class="mini__points">
+                  <li>평면도 이미지를 입력하면 자동으로 메쉬 정보를 생성하는 <strong>AI 개발</strong></li>
+                  <li>분석 프로그램을 백그라운드 프로세스로 Unity 프로젝트에 연동</li>
+                  <li>가구 미리보기 이미지를 생성하는 Unity 에디터 툴 제작</li>
+                  <li>UI 디자인 및 구현</li>
+                </ul>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">Python</li>
+                  <li class="tag">DeepLabV3+</li>
+                  <li class="tag">OpenCV</li>
+                  <li class="tag">시뮬레이션</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="https://youtu.be/b0ON-AcpSPE" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__thumb">
+                <img src="./assets/images/projects/07-01.png" alt="인덕이의 하루 썸네일" />
+              </div>
+              <div class="mini__body">
+                <h4 class="mini__title">인덕이의 하루</h4>
+                <p class="mini__meta">2021.03 - 2021.08 · 팀 (5인)</p>
+                <p class="mini__desc">게임 개발 동아리 프로젝트 팀에서 제작한 모바일 2D 캐주얼 게임입니다. 메인 화면 기능 전반을 담당하여 구현했습니다.</p>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">방치형 · 클리커</li>
+                  <li class="tag">모바일</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">인덕이의 하루</h4>
+                <p class="mini__meta">2021.03 - 2021.08 · 팀 (5인)</p>
+                <p class="mini__desc mini__desc--full">게임 개발 동아리 프로젝트 팀에서 제작한 모바일 2D 캐주얼 게임입니다. 메인 화면 기능 전반을 담당하여 구현했습니다.</p>
+                <ul class="mini__points">
+                  <li><strong>클리커 &amp; 방치형 시스템</strong> : 사용자 입력과 시간 경과에 따라 재화를 획득하는 시스템 구축, 이벤트를 활용하여 시스템과 UI 간의 결합도를 낮춤</li>
+                  <li><strong>데이터 관리</strong> : Scriptable Object로 정적 데이터를 관리하고 동적 데이터는 JSON 파싱으로 Local 저장소에 저장</li>
+                  <li><strong>메인화면 UI</strong> : 스킨 구매, 먹이 주기, 쓰레기 청소 등의 UI 제작</li>
+                </ul>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">방치형 · 클리커</li>
+                  <li class="tag">모바일</li>
+                </ul>
+                <div class="mini__links">
+                  <a class="link-arrow" href="#" target="_blank" rel="noopener">영상 <span>→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="mini" tabindex="0">
+            <!-- 평소에 보이는 면 -->
+            <div class="mini__front">
+              <div class="mini__body">
+                <h4 class="mini__title">[NCAI_3기] (미정)</h4>
+                <p class="mini__meta">2026.08 ~ (진행 중) · 팀 (4인) · 프로그래밍 전담</p>
+                <p class="mini__desc">Varco</p>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">ClaudeCode</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 마우스를 올리면 나타나는 면 -->
+            <div class="mini__back">
+              <div class="mini__back-inner">
+                <h4 class="mini__title">[NCAI_3기] (미정)</h4>
+                <p class="mini__meta">2026.08 ~ (진행 중) · 팀 (4인) · 프로그래밍 전담</p>
+                <p class="mini__desc mini__desc--full">Varco</p>
+                <ul class="tags">
+                  <li class="tag">Unity</li>
+                  <li class="tag">C#</li>
+                  <li class="tag">ClaudeCode</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- PROJECTS:END -->
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">함께 만들 기회가 있다면 편하게 연락 주세요.</p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:wldnjs1311@naver.com">이메일 보내기</a>
+          <a class="btn btn--secondary" href="https://github.com/username" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="#hero">
+          <span class="logo__name">윤지원</span>
+          <span class="logo__role">GAME CLIENT</span>
+        </a>
+        <p class="footer__copy">© 2026 윤지원. All rights reserved.</p>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
