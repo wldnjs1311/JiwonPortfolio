@@ -266,7 +266,7 @@ button { font: inherit; cursor: pointer; }
 /* ---------- 7-1. 이미지 슬라이더 (히어로 / 프로젝트 공용) ---------- */
 /* 슬라이드 비율은 --slide-ratio 로 조절 */
 .slider-box { --slide-ratio: 16 / 9; }
-.slider-box--hero { --slide-ratio: 4 / 3; }
+.slider-box--hero { --slide-ratio: 16 / 9; }
 
 .slider {
   position: relative;
@@ -583,50 +583,6 @@ button { font: inherit; cursor: pointer; }
 .skill__body { display: flex; flex-direction: column; gap: 2px; }
 .skill__name { font-size: 15px; font-weight: 600; color: var(--black); }
 .skill__desc { font-size: 14px; line-height: 1.55; color: var(--grey); word-break: keep-all; }
-
-/* ---------- 9-1. 구현 경험 ---------- */
-.systems {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.system {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px 18px;
-  border: 1px solid #E3E8ED;
-  border-left: 3px solid var(--primary-tint-3);
-  border-radius: var(--radius);
-  background: var(--white);
-  transition: border-left-color .2s ease, transform .2s ease;
-}
-
-.system:hover {
-  border-left-color: var(--primary);
-  transform: translateY(-2px);
-}
-
-.system__name {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--black);
-  word-break: keep-all;
-}
-
-.system__desc {
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--grey);
-  word-break: keep-all;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .system { transition: none; }
-  .system:hover { transform: none; }
-}
 
 /* ---------- 10. Projects ---------- */
 .projects { display: grid; gap: 64px; margin-top: 56px; }
@@ -1065,7 +1021,6 @@ button { font: inherit; cursor: pointer; }
   .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .about { grid-template-columns: 170px 1fr; gap: 36px; }
   .strengths { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .systems { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .project { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
   .minis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .project { gap: 32px; }
@@ -1075,7 +1030,6 @@ button { font: inherit; cursor: pointer; }
 @media (hover: none) {
   /* 호버 안내 문구는 터치 기기에서 의미가 없으므로 숨김 */
   .block-head__hint--hover { display: none; }
-  .system:hover { transform: none; border-left-color: var(--primary-tint-3); }
 
   /* 기타 프로젝트: 앞면은 썸네일만, 뒷면 내용을 그 아래 항상 표시 */
   .mini:hover {
@@ -1153,8 +1107,6 @@ button { font: inherit; cursor: pointer; }
   .about__meta { grid-template-columns: 1fr; gap: 10px; }
   .block-head { margin-top: 44px; }
   .block-head__title { font-size: 20px; }
-  .systems { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .system { padding: 14px; }
   .strengths { grid-template-columns: 1fr; gap: 12px; }
 
   /* Skills */
