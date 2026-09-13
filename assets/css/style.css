@@ -838,9 +838,12 @@ button { font: inherit; cursor: pointer; }
   background: var(--white);
   transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
 }
+/* :focus-within 은 마우스 클릭으로 받은 포커스에도 반응해서
+   클릭 후 마우스를 치워도 뒷면이 계속 열려 있었다.
+   :has(:focus-visible) 는 키보드로 이동했을 때만 반응한다. */
 .mini:hover,
 .mini:focus-visible,
-.mini:focus-within {
+.mini:has(:focus-visible) {
   border-color: var(--primary-tint-3);
   box-shadow: 0 10px 24px rgba(38, 50, 56, .12);
   transform: translateY(-3px);
@@ -924,7 +927,7 @@ button { font: inherit; cursor: pointer; }
 }
 .mini:hover .mini__back,
 .mini:focus-visible .mini__back,
-.mini:focus-within .mini__back { transform: translateY(0); }
+.mini:has(:focus-visible) .mini__back { transform: translateY(0); }
 
 .mini__back-inner {
   display: flex;
@@ -978,16 +981,6 @@ button { font: inherit; cursor: pointer; }
 
 @media (prefers-reduced-motion: reduce) {
   .project__detail, .project__toggle-icon::before, .project__toggle-icon::after { transition: none; }
-}
-
-/* ---------- 11. Contact ---------- */
-.contact { text-align: center; }
-.contact__actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 32px;
 }
 
 /* ---------- 12. 푸터 ---------- */
